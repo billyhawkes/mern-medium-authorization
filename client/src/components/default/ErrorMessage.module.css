@@ -1,0 +1,16 @@
+.error {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background-color: rgba(255, 0, 0, 0.63);
+    color: white;
+    margin-top: 1.5rem;
+}
+.exit {
+    background-color: white;
+    border-color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}

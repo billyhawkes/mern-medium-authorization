@@ -56,8 +56,11 @@ export default function App() {
                 <div className="container">
                     <Switch>
                         <Route path="/" exact>
-                            Home
-                            <pre>{user.user.username}</pre>
+                            {user.user.username ? (
+                                <h2>Welcome, {user.user.username}</h2>
+                            ) : (
+                                <h2>Please Login/Register</h2>
+                            )}
                         </Route>
                         <Route path="/register">
                             <Register></Register>
