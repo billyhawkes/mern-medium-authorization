@@ -1,6 +1,7 @@
 // Node Packages
 import express from "express";
 import mongoose from "mongoose";
+import cors from "cors";
 
 // Env variables
 import dotenv from "dotenv";
@@ -18,6 +19,7 @@ app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
 
 // MiddleWare
 app.use(express.json());
+app.use(cors());
 
 // MongoDB Setup
 mongoose.connect(`${process.env.MONGO_URI}`, {
